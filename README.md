@@ -29,7 +29,7 @@ search.ts - Type for search component
 The application makes use of two custom hooks: useFetch and useThrottle.
 
 ### useFetch:
-The useFetch hook is used to make API requests to the GitHub API. It takes a URL as an argument and returns an object with the following properties: isLoading, error, and data. isLoading is a boolean that indicates whether the API request is still loading. error is a string that contains any errors that occurred during the API request. data is the data returned by the API.
+The useFetch hook is used to make API requests to the GitHub API. It takes a URL as an argument and returns an object with the following properties: "loading" and "response".
 
 ### useThrottle:
 The useThrottle hook is used to throttle search input. It takes a value and a delay as arguments and returns a throttled value. The value is only updated after the delay has passed. This is useful for preventing excessive API requests when the user is typing quickly.
