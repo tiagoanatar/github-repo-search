@@ -34,25 +34,7 @@ The useFetch hook is used to make API requests to the GitHub API. It takes a URL
 ### useThrottle:
 The useThrottle hook is used to throttle search input. It takes a value and a delay as arguments and returns a throttled value. The value is only updated after the delay has passed. This is useful for preventing excessive API requests when the user is typing quickly.
 
-### Usage:
-To use the custom hooks, import them into a component and call them as follows:
-
-#### useFetch:
-
-typescript
-Copy code
-const { isLoading, error, data } = useFetch(url);
-
-#### useThrottle:
-
-typescript
-Copy code
-const throttledValue = useThrottle(value, delay);
-Conclusion:
-The Git Repo Search project is a web application built using Next.js, TypeScript, and custom hooks. The useThrottle hook is used to throttle search input and the useFetch hook is used to make API requests to the GitHub API. The application allows users to search for repositories on GitHub and displays the results in a responsive manner.
-
 ## Getting Started
-
 First, run the development server:
 
 ```bash
