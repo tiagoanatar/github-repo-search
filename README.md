@@ -4,6 +4,53 @@ https://iridescent-rugelach-fe0236.netlify.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Introduction
+The Git Repo Search project is a web application that allows users to search for repositories on GitHub. The project is built using Next.js, a React framework, and TypeScript for type-checking. The application makes use of custom hooks - useThrottle and useFetch - to handle search throttling and API requests respectively.
+
+## Folder Structure
+
+pages/ - Contains the Next.js pages for the application
+_app.tsx - Next.js App component
+index.tsx - Home page component
+components/ - Contains React components used in the application
+Pagination.tsx - Component for displaying pagination navigation
+RepoCard.tsx - Component for displaying a repository card
+SearchInput.tsx - Component for handling search input
+hooks/ - Contains custom hooks used in the application
+useFetch.ts - Hook for making API requests
+useThrottle.ts - Hook for throttling search input
+types/ - Contains TypeScript types used in the application
+Repo.ts - Type for a GitHub repository
+api.ts - Type for search results
+pagination.ts - Type for pagination component
+search.ts - Type for search component
+
+## Custom Hooks:
+The application makes use of two custom hooks: useFetch and useThrottle.
+
+### useFetch:
+The useFetch hook is used to make API requests to the GitHub API. It takes a URL as an argument and returns an object with the following properties: isLoading, error, and data. isLoading is a boolean that indicates whether the API request is still loading. error is a string that contains any errors that occurred during the API request. data is the data returned by the API.
+
+### useThrottle:
+The useThrottle hook is used to throttle search input. It takes a value and a delay as arguments and returns a throttled value. The value is only updated after the delay has passed. This is useful for preventing excessive API requests when the user is typing quickly.
+
+### Usage:
+To use the custom hooks, import them into a component and call them as follows:
+
+#### useFetch:
+
+typescript
+Copy code
+const { isLoading, error, data } = useFetch(url);
+
+#### useThrottle:
+
+typescript
+Copy code
+const throttledValue = useThrottle(value, delay);
+Conclusion:
+The Git Repo Search project is a web application built using Next.js, TypeScript, and custom hooks. The useThrottle hook is used to throttle search input and the useFetch hook is used to make API requests to the GitHub API. The application allows users to search for repositories on GitHub and displays the results in a responsive manner.
+
 ## Getting Started
 
 First, run the development server:
