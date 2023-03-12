@@ -65,7 +65,7 @@ export default function Home() {
     if (!loading && response?.length === 0) {
       return (
         <h2>
-          <i className="fa fa-search"></i> No search results found for:{" "}
+          <i className="fa fa-search"></i> No search results found for:
           {inputThrottle}
         </h2>
       );
