@@ -5,7 +5,7 @@ https://iridescent-rugelach-fe0236.netlify.app/
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Introduction
-The Git Repo Search project is a web application that allows users to search for repositories on GitHub. The project is built using Next.js, a React framework, and TypeScript for type-checking. The application makes use of custom hooks - useThrottle and useFetch - to handle search throttling and API requests respectively.
+The Git Repo Search project is a web application that allows users to search for repositories on GitHub. The project is built using Next.js, a React framework, and TypeScript for type-checking. The application makes use of custom hooks - useThrottle and useFetch - to handle search throttling and API requests respectively. A private key is used in envoriment variables file(.env.local) in order to bypass the git API search requests limitation. 
 
 ## Folder Structure
 
